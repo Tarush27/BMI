@@ -35,16 +35,17 @@ public class FourActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_four);
-        final EditText username = (EditText) findViewById(R.id.username);
 
-        final EditText password = (EditText) findViewById(R.id.password);
+        final EditText username =  findViewById(R.id.username);
 
-        final Button login = (Button) findViewById(R.id.login);
+        final EditText password =  findViewById(R.id.password);
 
-        TextView content = (TextView) findViewById(R.id.textView);
+        final Button login =  findViewById(R.id.login);
+
+        TextView content = findViewById(R.id.textView);
         content.setVisibility(View.VISIBLE);
 
-        Button register = (Button) findViewById(R.id.register);
+        Button register = findViewById(R.id.register);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
